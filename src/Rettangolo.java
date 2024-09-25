@@ -30,6 +30,8 @@ public class Rettangolo {
     public  int calcolaArea () {
         return 2 * (base + altezza);
     }
+
+
 }
 
 
