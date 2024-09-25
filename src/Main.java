@@ -15,6 +15,17 @@ public class Main {
         stampaAreaEPerimetro(rettangolo);
         stampaAreaEPerimetro(rettangolo1);
         stampaSommaAreaPerimetro(rettangolo, rettangolo1);
+
+        Sim sim1 = new Sim("123456789");
+        sim1.stampaInformazioni();
+
+        sim1.aggiungiChiamata("234567891", 5);
+        sim1.aggiungiChiamata("345678912", 7);
+
+        sim1.stampaInformazioni();
+
+        Sim sim2 = new Sim("567891234", 10 );
+        sim2.stampaInformazioni();
     }
     public static void stampaAreaEPerimetro (Rettangolo rettangolo) {
         int area = rettangolo.calcolaArea();
@@ -31,4 +42,7 @@ public class Main {
         System.out.println("Somma delle aree : " + sommaAree);
         System.out.println("Somma dei perimetri : " + sommaPerimetri);
     }
+
+
+
 }
